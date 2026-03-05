@@ -3,13 +3,15 @@ class Recipe {
   final String imagePath;
   final List<String> ingredients;
   final String instructions;
-  bool isFavorite;      // grad feature
+  final String category;
+  final int prepMinutes;
 
   Recipe({
     required this.name,
     required this.imagePath,
     required this.ingredients,
     required this.instructions,
-    this.isFavorite = false,
+    required this.category,
+    required this.prepMinutes,
   });
 }
